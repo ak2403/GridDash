@@ -28,4 +28,13 @@ module.exports = {
       template: './template/index.html',
     }),
   ],
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  devServer: {
+    contentBase: ['./src'],
+    inline: true,
+    hot: true,
+    historyApiFallback: true,
+  },
 };

@@ -6,7 +6,7 @@
     "scripts": {
         "start": "electron .",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev:build": "webpack --config webpack.config.js"
+        "dev:build": "webpack --config webpack.config.js --watch"
     },
     "repository": {
         "type": "git",
@@ -24,6 +24,8 @@
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
         "react-redux": "^8.0.1",
+        "react-router-dom": "^6.3.0",
+        "redux": "^4.2.0",
         "redux-thunk": "^2.4.1",
         "styled-components": "^5.3.5"
     },
@@ -32,6 +34,7 @@
         "@babel/preset-env": "^7.18.0",
         "@babel/preset-react": "^7.17.12",
         "babel-loader": "^8.2.5",
+        "electron-reloader": "^1.2.3",
         "eslint": "^7.32.0 || ^8.2.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-plugin-import": "^2.25.3",
