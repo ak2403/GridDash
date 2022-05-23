@@ -1,7 +1,9 @@
 const store = require('electron-store');
 
+const schema = require('./schema');
+
 function Store() {
-  const storeState = new store();
+  const storeState = new store({ schema });
 
   function get(key) {
     try {
@@ -14,9 +16,9 @@ function Store() {
     }
   }
 
-  function set(setObj = {}) {
+  function set(key, value) {
     try {
-      storeState.set(setObj);
+      storeState.set(key, value);
 
       return true;
     } catch (error) {

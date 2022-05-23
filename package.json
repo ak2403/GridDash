@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/ak2403/GridDash#readme",
   "dependencies": {
+    "@blueprintjs/core": "^4.3.2",
+    "@electron/remote": "^2.0.8",
     "electron": "^18.2.4",
     "electron-store": "^8.0.1",
     "prop-types": "^15.8.1",
@@ -35,6 +37,7 @@
     "@babel/preset-env": "^7.18.0",
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
     "electron-reloader": "^1.2.3",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -45,6 +48,7 @@
     "html-webpack-plugin": "^5.5.0",
     "jest": "^28.1.0",
     "prettier": "^2.6.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   }
